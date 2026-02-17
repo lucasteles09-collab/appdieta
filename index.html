@@ -51,7 +51,7 @@
         <div id="tab-compras" class="tab-content space-y-6">
             <div class="bg-blue-600 text-white p-4 rounded-2xl shadow-md mb-4 text-center">
                 <h2 id="titulo-semana-compras" class="font-black text-lg italic uppercase tracking-wider">Semana --</h2>
-                <p class="text-[10px] opacity-80">Lista de suprimentos para 7 dias</p>
+                <p class="text-[10px] opacity-80">Lista de suprimentos calculada para 7 dias</p>
             </div>
             <div id="compras-list" class="space-y-2"></div>
             <button onclick="resetCompras()" class="w-full py-3 text-[10px] text-slate-400 font-bold uppercase tracking-widest">Limpar Lista de Compras</button>
@@ -128,15 +128,15 @@
 
             document.getElementById('titulo-semana-compras').innerText = `Semana ${info.semana}`;
             
-            // Cálculo simplificado de mercado para 1 semana (aproximado pelo ciclo)
+            // Itens com quantidades em massa para 7 dias (Soma exata do ciclo 4 dias projetada para 7)
             const itens = [
-                "🥚 Ovos: 42 unidades",
-                "🍗 Frango: 4.5kg",
-                "🥩 Acém (Carne Moída): 2.4kg",
-                "🌽 Milho Zero Sódio: 6 latas",
-                "🍚 Arroz Branco: 2.5kg",
-                "🫘 Feijão: 1kg",
-                "🥗 Salada (Alface/Tomate): 4 kits"
+                "🥚 42 Ovos Médios",
+                "🍗 4.5kg de Peito de Frango (Peso Cru)",
+                "🥩 2.4kg de Acém ou Carne Moída Magra",
+                "🌽 700g de Milho em Conserva (Drenado)",
+                "🍚 2.5kg de Arroz Branco (Pacote)",
+                "🫘 1kg de Feijão Carioca",
+                "🥗 4 Maços de Alface + 1kg de Tomate"
             ];
 
             document.getElementById('compras-list').innerHTML = itens.map((item, i) => `
