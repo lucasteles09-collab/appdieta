@@ -227,5 +227,11 @@
         function resetAgua() { if(confirm("Zerar água?")) { localStorage.removeItem('projeto95kg_water'); gerarGridAgua(); } }
         function resetCompras() { if(confirm("Limpar lista de compras?")) { localStorage.removeItem('projeto95kg_compras'); renderCompras(); } }
     </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
 </body>
 </html>
+
