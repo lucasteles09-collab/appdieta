@@ -1,0 +1,16 @@
+{
+  "name": "Projeto 95kg Pro",
+  "short_name": "95kgPro",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1d4ed8",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
